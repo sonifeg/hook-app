@@ -1,16 +1,16 @@
 import React from "react";
 
-export const ShowIncrement = React.memo( ({ increment }) => {
+export const ShowIncrement = React.memo(({ increment }) => {
   console.log("ops i did it again");
 
   return (
     <button
       className="btn btn-primary"
       onClick={() => {
-        increment();
+        increment(5);
       }}
     >
       Increment
     </button>
-  )
-})
+  );
+});
